@@ -1,0 +1,74 @@
+@import "../../Style/css-variables.scss";
+
+.collapse {
+	width: 100%;
+	&__visible {
+		align-items: center;
+		background: $primary;
+		border-radius: 5px;
+		color: white;
+		cursor: pointer;
+		display: flex;
+		height: 29.93px;
+		justify-content: space-between;
+		padding: 0px 13px;
+		&__title {
+			font-size: 13px;
+			font-weight: 500;
+			margin: 0;
+			padding: 0;
+		}
+		&__chevron {
+			transition: all 0.4s ease-in-out;
+			width: 13px;
+		}
+	}
+
+	&__toggle {
+		background: $secondary;
+		border-radius: 0 0 10px 10px;
+		color: $primary;
+		font-size: 12px;
+		font-weight: 300;
+		height: auto;
+		opacity: 0;
+		transition: opacity 200ms ease-in;
+		&__content {
+			line-height: 17.11px;
+			margin: 0;
+			padding: 15px;
+			pointer-events: none;
+		}
+	}
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.animated {
+	opacity: 1;
+	transition: height 500ms ease-in, opacity 300ms ease-in;
+}
+
+@media screen and (min-width: $mediumdevices) {
+	.collapse {
+		&__visible {
+			border-radius: 10px;
+			height: 52px;
+			&__title {
+				font-size: 18px;
+			}
+			&__chevron {
+				width: 25px;
+			}
+		}
+		&__toggle {
+			&__content {
+				font-size: 18px;
+				line-height: 30.67px;
+				text-align: justify;
+			}
+		}
+	}
+}

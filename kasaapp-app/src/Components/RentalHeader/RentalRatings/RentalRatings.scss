@@ -1,0 +1,23 @@
+@import "../../../Style/css-variables.scss";
+
+.star {
+height: 23px;
+width: 23px;
+}
+
+.stars {
+ width: 450px;
+}
+
+@media screen and (min-width: $mediumdevices) {
+ .stars {
+  margin-top: 10px;
+  width: 190px;
+ }
+ 
+ .star {
+  height: 32px;
+  margin: 0 3px;
+  width: 32px;
+ }
+}

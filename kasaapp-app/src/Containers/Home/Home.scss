@@ -1,0 +1,36 @@
+@import "../../Style/css-variables.scss";
+
+.homepage {
+	padding: 10px;
+}
+
+.rental {
+	&__section {
+		display: grid;
+		gap: 10px;
+		margin-top: 22px;
+	}
+}
+
+@media screen and (min-width: $mediumdevices) {
+	.homepage {
+		max-width: 1080px;
+		margin: auto;
+	}
+
+	.rental__section {
+		background: $secondary;
+		border-radius: 10px;
+		gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width: $largedevices) {
+	.rental__section {
+		grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 50px;
+	}
+}

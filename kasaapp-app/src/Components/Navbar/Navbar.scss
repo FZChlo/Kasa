@@ -1,0 +1,38 @@
+@import "../../Style//css-variables.scss";
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px;
+	&__logo {
+		width: 110px;
+	}
+	&__nav {
+		&__link {
+			color: $primary;
+			font-size: 12px;
+			margin-left: 10px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.active {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: $mediumdevices) {
+	.navbar {
+		max-width: 1080px;
+		margin: auto;
+		padding: 5px 20px;
+		&__nav {
+			&__link {
+				text-transform: capitalize;
+				font-size: 16px;
+			}
+		}
+	}
+}

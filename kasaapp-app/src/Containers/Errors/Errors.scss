@@ -1,0 +1,42 @@
+@import "../../style/css-variables.scss";
+
+.error {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 80vh;
+	text-align: center;
+	&__title {
+		color: $primary;
+		font-size: 96px;
+		font-weight: 700;
+	}
+	&__description {
+		color: $primary;
+		font-size: 18px;
+		font-weight: 500;
+		margin-top: 11px;
+		padding: 0 58px;
+	}
+	&__btn {
+		background: transparent;
+		border: none;
+		color: $primary;
+		font-size: 14px;
+		margin-top: 133px;
+		text-decoration: underline;
+	}
+}
+
+@media screen and (min-width: $largedevices) {
+	.error {
+		&__title {
+			font-size: 288px;
+		}
+		&__description {
+			font-size: 36px;
+		}
+
+	}
+}

@@ -1,0 +1,40 @@
+@import "../../Style//css-variables.scss";
+@import "../../Style/keyframes.scss";
+
+.herobanner,
+.herobanner__about {
+	background-position: center;
+	background-size: cover;
+	border-collapse: separate;
+	border-radius: 10px;
+	display: flex;
+	height: 111px;
+	align-items: center;
+	&__title {
+		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+		color: white;
+		font-size: 24px;
+		font-weight: 500;
+		padding: 16px;
+	}
+}
+
+.herobanner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img-1.png");
+}
+
+.herobanner__about {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img-2.png");
+}
+
+@media screen and (min-width: $mediumdevices) {
+	.herobanner,
+	.herobanner__about {
+		height: 223px;
+		justify-content: center;
+		&__title {
+			font-size: 48px;
+		}
+	}
+}
