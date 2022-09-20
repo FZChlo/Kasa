@@ -11,7 +11,7 @@ Kasa is an application that allows people to find appartments between individual
 Install Kasa with npm
 
 ```bash
-  git clone https://github.com/FZChlo/KASA.git
+  git clone https://github.com/FZChlo/kasa
   cd Kasa
   yarn install Kasa
 ```
@@ -21,7 +21,7 @@ Install Kasa with npm
 Clone the project
 
 ```bash
-  git clone https://github.com/FZChlo/KASA.git
+  git clone https://github.com/FZChlo/kasa
 ```
 
 Go to the project directory
