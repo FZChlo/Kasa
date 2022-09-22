@@ -4,7 +4,7 @@
 
 # Kasa - Find your next appartment !
 
-Kasa is an application that allows people to find appartments between individuals. In the present, the only way to find a housing is through real estate agencies which take a large part of the rent for themselves. Kasa interface enables people to connect directly with each other and to reach agreements on prices, dates, etc.
+
 
 ## Installation
 
