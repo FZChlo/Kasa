@@ -1,8 +1,12 @@
+// Ajout des imports
 import "./RentalTitle.scss";
 import { Component } from "react";
 
+// Création de l'export classt " RentalTitle"
 export default class RentalTitle extends Component {
 	render() {
+
+// Qui retourne en HTML le titre et la localisation
 		return (
 			<>
 				<h1 className="title">{this.props.title}</h1>

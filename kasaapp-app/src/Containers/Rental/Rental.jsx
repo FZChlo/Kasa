@@ -1,3 +1,4 @@
+// Ajout des imports
 import "./Rental.scss";
 import { Component } from "react";
 import  Carrousel  from "../../Components/Carrousel/Carrousel";
@@ -9,11 +10,13 @@ import RentalRatings from "../../Components/RentalHeader/RentalRatings/RentalRat
 import RentalTags from "../../Components/RentalHeader/RentalTags/RentalTags";
 import RentalTitle from "../../Components/RentalHeader/RentalTitle/RentalTitle";
 
+// Création de l'export class "Rental"
 export default class Rental extends Component {
 	render() {
 		const rentalData = data;
 		const rentalUrlId = window.location.pathname.substr(8);
 		const rental = rentalData.find((item) => item.id === rentalUrlId);
+// Qui renvoi soit la class Error, ou le HTML contenant les exports class : Carrousel, RentalTitle, RentalTags, RentalRatings & Collapse
 		if (!rental) return <Error />;
 		return (
 			<div className="rental">

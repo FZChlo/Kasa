@@ -1,19 +1,23 @@
+// Ajout des imports
 import { Component } from "react";
 import Chevron from "./chevron.svg";
 import "./Collapse.scss";
 
+// Création de l'export de la class "Collapse" qu'on configure par default sur " Est ouvert : faux"
 export default class Collapse extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { isOpenned: false };
 	}
 
+// Setting des outils de la collapse avec son statement( êtat = ouvert ou fermée)
 	toggleCollapse() {
 		this.setState({
 			isOpenned: !this.state.isOpenned,
 		});
 	}
 
+// Setting du contenu de la Collapse
 	collapseContent() {
 		const content = this.props.content;
 
@@ -32,6 +36,7 @@ export default class Collapse extends Component {
 		}
 	}
 
+// On retourne le HTML du collapse, avec l'animation à l'ouverture et les changements selon si la collapse est ouvert ou fermée
 	render() {
 		return (
 			<div className="collapse">

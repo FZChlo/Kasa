@@ -1,9 +1,11 @@
+// Ajout des imports
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
+// Affiche un élément React au sein du nœud DOM spécifié
 ReactDOM.render(
 	<BrowserRouter>
 		<React.StrictMode>

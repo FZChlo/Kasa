@@ -1,10 +1,13 @@
+// Ajout des imports
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "./NavbarLogo.svg";
 import{ Component } from "react";
 
+// Création de l'export class "Navbar"
 export default class Navbar extends Component {
 	render() {
+// Qui renvoi en HTML le logo, et le lien actif ( Accueil ou a propos) 
 		return (
 			<div className='navbar'>
 				<Logo className="navbar__logo"></Logo>

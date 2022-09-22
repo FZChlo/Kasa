@@ -1,9 +1,11 @@
+// Ajout des imports
 import { Routes, Route } from "react-router-dom";
 import About from "./Containers/About/About";
 import Error from "./Containers/Errors/Errors";
 import Home from "./Containers/Home/Home";
 import Rental from "./Containers/Rental/Rental";
 
+// Création de la constent Router, qui renvoi vers les differentes routes  -> Error, About, Rental, Home
 const Router = () => {
 	return (
 		<Routes>
@@ -15,4 +17,5 @@ const Router = () => {
 	);
 };
 
+// Création de l'export Router
 export default Router
