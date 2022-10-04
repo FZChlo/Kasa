@@ -10,7 +10,7 @@ export default class Home extends Component {
 	state = {
 		rentalList: [],
 	};
-// On récupére la data de " GetData" 
+// On récupére la data 
 	componentDidMount() {
 		this.setState({ rentalList: [...getData()] });
 	}

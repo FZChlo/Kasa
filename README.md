@@ -27,7 +27,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd kasa-app
+  cd kasaapp-app
 ```
 
 Install dependencies
