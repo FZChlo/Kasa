@@ -8,16 +8,6 @@
 
 ## Installation
 
-Install Kasa with npm
-
-```bash
-  git clone https://github.com/FZChlo/kasa
-  cd Kasa
-  yarn install Kasa
-```
-    
-## Run Locally
-
 Clone the project
 
 ```bash
@@ -33,13 +23,13 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  yarn install
+  yarn install or npm install
 ```
 
 Start the server
 
 ```bash
-  yarn start
+  yarn start or npm start
 ```
 
 
